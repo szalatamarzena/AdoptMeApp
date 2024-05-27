@@ -19,7 +19,7 @@ const App = () => {
   const adoptedPet = useState(null)
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/AdoptMeApp">
         <AdoptedPetContext.Provider value={adoptedPet}>
           <QueryClientProvider client={queryClient}>
             <header>
